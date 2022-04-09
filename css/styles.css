@@ -167,8 +167,11 @@ footer {
   border-radius: 20px;
   text-align: center;
   background: linear-gradient(to bottom, #0e92c7, #4aa3c7);
+  transition: height 2s;
 }
-
+.container_entrada:hover {
+  height: 200px;
+}
 .container2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -189,6 +192,10 @@ footer {
   border-radius: 20px;
   text-align: center;
   background: linear-gradient(to bottom, #0e92c7, #4aa3c7);
+  transition: height 2s;
+}
+.container_producto:hover {
+  height: 200px;
 }
 
 .container2 img {
@@ -326,3 +333,17 @@ footer {
 }
 
 /*FOOTER*/
+
+h1 {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
