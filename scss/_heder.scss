@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom right, #095a7a, map-get($colores, color1));
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    
+    a {
+        align-self: center;
+    }
+}
+
+.logo {
+    height: 50px;
+}
+
+@media (max-width: 392px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        background: linear-gradient(to bottom right, #095a7a, map-get($colores, color1));
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

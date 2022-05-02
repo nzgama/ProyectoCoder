@@ -10,3 +10,15 @@
     vertical-align: -.125em;
     fill: currentColor;
 }
+
+footer {
+
+    background-color: map-get($colores, color2);
+    height: 150px;
+
+}
+
+.redes-footer {
+    align-self: center;
+    margin-right: 10px;
+}

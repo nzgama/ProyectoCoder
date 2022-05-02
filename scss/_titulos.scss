@@ -1,0 +1,34 @@
+.titulo {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo_largo {
+    @extend .titulo;
+}
+
+.titulo2 {
+    @extend .titulo;
+    font-size: 50px;
+    background-color: map-get($colores, color1);
+}
+
+h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+@media (max-width: 762px) {
+    .titulo_largo {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
